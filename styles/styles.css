@@ -62,7 +62,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -73,12 +73,15 @@ nav {
 
 .nav-logo {
   font-size: 2rem;
-  padding: 0 0.75rem;
-  margin: 0 0.25rem;
+  margin: 0 0.5rem;
 }
 
 .nav-logo:hover {
   color: red;
+}
+
+.nav-logo img {
+  width: 15rem;
 }
 
 .nav-button {
@@ -96,14 +99,6 @@ nav {
   color: red;
 }
 
-.teste {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
 
 
 
@@ -113,7 +108,7 @@ nav {
 
 
 /* Tablet */
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 860px) {
 
   .nav-button i {
     font-size: 2rem;
@@ -124,8 +119,8 @@ nav {
 }
 
 /* Phone */
-@media screen and (max-width: 460px) {
-  header h1 {
+@media screen and (max-width: 520px) {
+  header .nav-logo {
     display: none;
   }
   nav {
