@@ -103,6 +103,17 @@ nav {
   justify-content: space-between;
 }
 
+.title {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 250%;
+  font-style: oblique;
+  font-weight: bold;
+
+}
+
 
 
 
