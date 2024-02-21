@@ -1,5 +1,7 @@
 # Pizzaplace
 
+teste
+
 Pretende-se a concepcao de uma maquete html css funcional com navegacao de homepage, produtos, especiais, localizacao, login.
 
 O menu devera estar sempre disponivel em todos os ficheiros.
