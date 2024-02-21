@@ -1,4 +1,4 @@
-# pizzaplace
+# Pizzaplace
 
 Pretende-se a concepcao de uma maquete html css funcional com navegacao de homepage, produtos, especiais, localizacao, login.
 
@@ -23,4 +23,3 @@ As localizacoes queremos apenas mostrar mapas e moradas de cada uma das 5 lojas 
 O login deve apresentar apenas formulario a pedir email e senha para futuro acesso a conta cliente.
 
 1 entrega por grupo em zip c imagens, html e css
-
