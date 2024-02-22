@@ -152,9 +152,7 @@ nav {
   flex-direction: column;
 }
 
-
-
-.promocao-title {
+.page-title {
   font-size: 2.5rem;
   margin-top: 8vh;
   color: #fff;
@@ -245,9 +243,44 @@ nav {
 }
 
 
+/* NEWSLETTER */
+
+.newsletter {
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(230, 50, 0, 0.85),
+    rgba(255, 255, 255, 0.75)
+  );
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 7rem;
+  color: #fff;
+}
 
 
 
+
+
+
+/* PRODUTOS */
+
+.produtos {
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),url('/styles/images/pizza_home.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 7rem;
+  color: #fff;
+}
 
 
 
