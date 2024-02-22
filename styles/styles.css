@@ -118,6 +118,22 @@ nav {
   font-weight: bold;
 
 }
+.pizza-container {
+  display: grid;
+  grid-auto-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 50px;
+}
+.pizza-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.pizza-set img {
+  width: 23%;
+  margin: 0.5%;
+}
 
 
 >>>>>>> 255df70c6f18c195dc0015b75461325a0568bd0b
