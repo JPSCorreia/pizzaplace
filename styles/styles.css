@@ -340,6 +340,9 @@ nav {
 #banner-image-pizza-16 {
   background-image: url('../styles/images/Buffalo.png');
 }
+#banner-image-pizza-17 {
+  background-image: url('../styles/images/pizzaria.jpg');
+}
 
 .wrapper-pizza h1 {
   margin-top: 1rem;
@@ -381,7 +384,7 @@ nav {
 /* NEWSLETTER */
 
 .newsletter {
-  height: 100vh;
+  height: 55vh;
   background-image: linear-gradient(
     rgba(230, 50, 0, 0.85),
     rgba(255, 255, 255, 0.75)
@@ -389,17 +392,139 @@ nav {
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
   font-size: 7rem;
   color: #fff;
 }
+.newsletter .page-title {
+  margin-top: 2vh;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: space-around;
+}
+.newsletter-coluna-1 {
+  width: 30%;
+}
+.newsletter-coluna-2 {
+  width: 30%;
+}
+.newsletter-coluna-3 {
+  width: 30%;
+}
+
+.newsletter-container-pizza {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(225, 225, 225, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1rem 1.75rem;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 0;
+  margin: 0rem 2rem 1.75rem 2rem;
+  flex-shrink: 3;
+  min-height: 300px;
+}
+
+.newsletter-wrapper-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-wrapper-pizza h1 {
+  margin-top: 1rem;
+  color: rgba(255,77,57,1);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-coluna-2 .newsletter-wrapper-pizza h1 {
+  font-size: 3rem;
+}
+
+
+.newsletter-pizza-card-paragraph {
+  margin-top: 1rem;
+  color: rgba(255,77,57,1);
+}
+
+.newsletter-pizza-button {
+  border: none;
+  padding: 12px 20px;
+  margin-top: 1rem;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: rgba(255,77,57,1);
+  background: rgba(215, 215, 215, 1);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.525));
+}
+
+.newsletter-pizza-button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.newsletter-pizza-button .fa-shopping-cart {
+  font-size: 1.1rem !important;
+  color: rgba(255,77,57,1);
+}
+
+.newsletter-banner-image-pizza {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.525));
+}
+
+.newsletter-wrapper-pizza form p {
+  color: rgba(255,77,57,1);
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.newsletter-wrapper-pizza form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background: transparent;
+  width: 300px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 36px;
+  backdrop-filter: blur(2px);
+  color: black;
+  font-size: 1rem;
+}
+
 
 /* PRODUTOS */
 
 .produtos {
   /* height: 200vh; */
-  background-color: rgba(255,77,57,0.9);
+  background-color: rgba(255,77,57,0.3);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -414,6 +539,10 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.produtos-promocao h1 {
+  color: rgba(255,77,57,1);
 }
 
 .produtos-container-pizza {
