@@ -1,58 +1,135 @@
 /* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 a {
- color: black;
- text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
-
-
 /* Our Rules */
-
-
 /* HEADER */
 
 * {
@@ -61,7 +138,7 @@ a {
 
 h1 {
   font-family: 'Righteous', sans-serif;
-  color: rgba(255,255,255,0.98);
+  color: rgba(255, 255, 255, 0.98);
   text-transform: uppercase;
   font-size: 2.4rem;
 }
@@ -76,26 +153,31 @@ p {
   text-transform: uppercase;
 }
 
+span {
+  font-family: 'Poppins', sans-serif;
+}
+
 header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 6vh;
+  min-height: 40px;
   position: fixed;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 999;
 }
 
 nav {
   display: flex;
-  padding-right:1rem;
+  padding-right: 1rem;
   justify-content: space-between;
 }
 
 .nav-logo {
   margin: 0 0.5rem;
-  padding-left:1rem;
+  padding-left: 1rem;
 }
 
 .nav-logo img {
@@ -109,34 +191,26 @@ nav {
 }
 .nav-button span {
   padding-left: 0.25rem;
+  transition: all 0.2s ease;
+}
+.nav-button i {
+  transition: all 0.2s ease;
 }
 .nav-button:hover span {
   color: #ff5757;
-  transition: all .15s ease; 
+  transition: all 0.2s ease;
 }
 .nav-button:hover i {
   color: #ff5757;
-  transition: all .15s ease; 
+  transition: all 0.2s ease;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* HOME / PROMOÇÕES */
 
 .home {
   height: 100vh;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url('../styles/images/pizza_home.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../styles/images/pizza_home.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -151,18 +225,19 @@ nav {
   display: flex;
   flex-direction: column;
 }
+
 .pizza-container {
   display: grid;
   grid-auto-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin-top: 50px;
 }
+
 .pizza-set {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-
 }
+
 .pizza-set img {
   width: 23%;
   margin: 0.5%;
@@ -171,24 +246,16 @@ nav {
 .page-title {
   font-size: 2.5rem;
   margin-top: 8vh;
+  margin-bottom: 1rem;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-
-
-
-
-
-
 .home-promocao-img-container {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  /* border: 1px solid green; */
-  flex-wrap: wrap;
 }
 
 .container-pizza {
@@ -196,16 +263,17 @@ nav {
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.25);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);  
-  padding: 1rem 1.75rem;  
-  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1rem 1.75rem;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
   z-index: 0;
   margin: 0rem 2rem 1.75rem 2rem;
+  flex-shrink: 3;
 }
 
 .wrapper-pizza {
@@ -215,20 +283,68 @@ nav {
 }
 
 .banner-image-pizza {
-  background-image: url("../styles/images/pizza_home_2.png");
   background-position: center;
   background-size: cover;
   height: 200px;
   width: 270px;
   border-radius: 8px;
-  border: 1px solid rgba(255,255,255, 0.2);
-  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.525));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.525));
+}
+
+#banner-image-pizza-1 {
+  background-image: url('../styles/images/Margherita.png');
+}
+#banner-image-pizza-2 {
+  background-image: url('../styles/images/Bolonhesa.png');
+}
+#banner-image-pizza-3 {
+  background-image: url('../styles/images/Carbonara.png');
+}
+#banner-image-pizza-4 {
+  background-image: url('../styles/images/Pepperoni.png');
+}
+#banner-image-pizza-5 {
+  background-image: url('../styles/images/Vegan.png');
+}
+#banner-image-pizza-6 {
+  background-image: url('../styles/images/Capricciosa.png');
+}
+#banner-image-pizza-7 {
+  background-image: url('../styles/images/Supreme.png');
+}
+#banner-image-pizza-8 {
+  background-image: url('../styles/images/Hawaiian.png');
+}
+#banner-image-pizza-9 {
+  background-image: url('../styles/images/Tonno.png');
+}
+#banner-image-pizza-10 {
+  background-image: url('../styles/images/Pollo.png');
+}
+#banner-image-pizza-11 {
+  background-image: url('../styles/images/Funghi.png');
+}
+#banner-image-pizza-12 {
+  background-image: url('../styles/images/Works.png');
+}
+#banner-image-pizza-13 {
+  background-image: url('../styles/images/Prociutto.png');
+}
+#banner-image-pizza-14 {
+  background-image: url('../styles/images/Diavola.png');
+}
+#banner-image-pizza-15 {
+  background-image: url('../styles/images/4Fromaggi.png');
+}
+#banner-image-pizza-16 {
+  background-image: url('../styles/images/Buffalo.png');
 }
 
 .wrapper-pizza h1 {
   margin-top: 1rem;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.75rem;
@@ -243,21 +359,24 @@ nav {
   padding: 12px 20px;
   margin-top: 1rem;
   border-radius: 24px;
-  font-size: 0.75rem;  
-  letter-spacing: 2px;  
+  font-size: 0.85rem;
+  letter-spacing: 2px;
   cursor: pointer;
   background: rgba(230, 50, 0, 0.75);
-  color: rgba(255,255,255,0.95);
+  color: rgba(255, 255, 255, 0.95);
   font-weight: bold;
-  transition: all .3s ease; 
-  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.525));
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.525));
 }
 
-.pizza-button:hover{
-  transform: scale(1.1); 
-  transition: all .3s ease;    
+.pizza-button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
-
+.fa-shopping-cart {
+  font-size: 1.1rem !important;
+  color: white;
+}
 
 /* NEWSLETTER */
 
@@ -276,19 +395,11 @@ nav {
   color: #fff;
 }
 
-
-
-
-
-
 /* PRODUTOS */
 
 .produtos {
-  height: 100vh;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url('../styles/images/pizza_home.jpg');
+  /* height: 200vh; */
+  background-color: rgba(255,77,57,0.9);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -296,18 +407,92 @@ nav {
   text-align: center;
   font-size: 7rem;
   color: #fff;
+  flex-wrap: wrap;
 }
 
+.produtos-promocao {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+.produtos-container-pizza {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(225, 225, 225, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1rem 1.75rem;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 0;
+  margin: 0rem 2rem 1.75rem 2rem;
+  flex-shrink: 3;
+}
 
+.produtos-wrapper-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.produtos-wrapper-pizza h1 {
+  margin-top: 1rem;
+  color: rgba(255,77,57,1);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75rem;
+}
 
+.produtos-banner-image-pizza {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 270px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.525));
+}
 
+.produtos-pizza-button {
+  border: none;
+  padding: 12px 20px;
+  margin-top: 1rem;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: rgba(255,77,57,1);
+  background: rgba(215, 215, 215, 1);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.525));
+}
 
+.produtos-pizza-button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 
+.produtos-pizza-button .fa-shopping-cart {
+  font-size: 1.1rem !important;
+  color: rgba(255,77,57,1);
+}
 
+.produtos-pizza-card-paragraph {
+  color: rgba(255,77,57,1);
+}
 
-
+.produtos-img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 
 
@@ -322,21 +507,13 @@ nav {
 
 
 /* Tablet */
-@media screen and (max-width: 860px) {
-  
-  .tablet-hide {
-    display: none;
-  }
-
+@media screen and (max-width: 865px) {
   .nav-button i {
     font-size: 2rem;
   }
-  .nav-button span{
+  .nav-button span {
     display: none;
   }
-  /* .promocao h1 {
-    font-size: 5rem;
-  } */
   .pizza-container {
     width: 7rem;
   }
@@ -346,18 +523,74 @@ nav {
 }
 
 /* Phone */
-@media screen and (max-width: 520px) {
-  
-  .mobile-hide {
-    display: none;
-  }
-
-  
+@media screen and (max-width: 530px) {
   header .nav-logo {
     display: none;
   }
   nav {
     width: 100%;
-    justify-content: space-aroundode;
+    justify-content: space-around;
+  }
+}
+
+/* Homepage images for different resolutions */
+@media screen and (max-width: 1575px) {
+  #home-pizza-4 {
+    display: none;
+  }
+  #home-pizza-8 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  #home-pizza-3 {
+    display: none;
+  }
+  #home-pizza-7 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  #home-pizza-2 {
+    display: none;
+  }
+  #home-pizza-6 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 890px) {
+  .promocao {
+    justify-content: space-between;
+  }
+  #home-pizza-1 {
+    align-self: center;
+    justify-self: center;
+  }
+  #home-pizza-2 {
+    align-self: center;
+    justify-self: center;
+  }
+  #home-pizza-3 {
+    align-self: center;
+    justify-self: center;
+  }
+  #home-pizza-4 {
+    align-self: center;
+    justify-self: center;
+  }
+  #home-pizza-5 {
+    display: none;
+  }
+  #home-pizza-6 {
+    display: none;
+  }
+  #home-pizza-7 {
+    display: none;
+  }
+  #home-pizza-8 {
+    display: none;
   }
 }
