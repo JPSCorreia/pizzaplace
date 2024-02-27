@@ -150,6 +150,7 @@ p {
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 span {
@@ -549,7 +550,14 @@ input {
 /* PRODUTOS */
 .produtos {
   /* height: 200vh; */
-  background-color: rgba(255,77,57,0.3);
+  /* background-color: rgba(255,77,57,0.3); */
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(230, 50, 0, 0.85),
+    rgba(230, 50, 0, 0.85),
+    rgba(230, 50, 0, 0.85)
+  );
   background-size: cover;
   background-position: center;
   display: flex;
@@ -742,6 +750,130 @@ input {
 }
 
 
+/* LOGIN */
+.login {
+  height: 95vh;
+  /* background-image: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(230, 50, 0, 0.85),
+    rgba(230, 50, 0, 0.85)
+  ); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../styles/images/pizzaria_2.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 7rem;
+  color: #fff;
+}
+
+.login-container-pizza {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(225, 225, 225, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1rem 1.75rem;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 0;
+  margin: 0rem 1.5rem 0 1.5rem;
+  flex-shrink: 3;
+  min-height: 300px;
+  width: 25rem;
+  margin: 15rem 0 12rem 0;
+}
+
+.login-wrapper-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-wrapper-pizza h1 {
+  margin-top: 1rem;
+  color: rgba(255,77,57,1);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.login-wrapper-pizza form p {
+  color: rgba(255,77,57,1);
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.login-wrapper-pizza form input {
+  color: #fff;
+  /* background-color: rgba(255, 255, 255, 0.75); */
+}
+.login-wrapper-pizza form input::placeholder {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.login-wrapper-pizza form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper-pizza form input {
+  width: 80%;
+}
+
+.login div {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.senha-esquecida {
+  font-size: 0.8rem !important;
+  text-decoration: underline;
+  margin-top: 1.5rem !important;
+  cursor: pointer;
+  color: black !important;
+}
+
+.login-pizza-button {
+  border: none;
+  padding: 12px 20px;
+  margin-top: 1rem;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: rgba(255,77,57,1);
+  background: rgba(215, 215, 215, 1);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.525));
+  width: 9rem;
+}
+.login-pizza-button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+
+
 
 /* FOOTER */
 footer {
@@ -802,6 +934,24 @@ footer {
   nav {
     width: 100%;
     justify-content: space-around;
+  }
+  .login-container-pizza {
+    width: 15rem;
+  }
+  .lojas-container-pizza {
+    padding: 1rem 1rem;
+  }
+  .lojas-wrapper-pizza h1 {
+    font-size: 1.5rem;
+  }
+  .lojas-row-1 {
+    width: 100% !important;
+  }
+  .lojas-row-2 {
+    width: 100% !important;
+  }
+  .lojas-row-3 {
+    width: 100% !important;
   }
 }
 
