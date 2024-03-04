@@ -551,13 +551,15 @@ input {
 .produtos {
   /* height: 200vh; */
   /* background-color: rgba(255,77,57,0.3); */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 1),
     rgba(230, 50, 0, 0.85),
     rgba(230, 50, 0, 0.85),
     rgba(230, 50, 0, 0.85)
-  );
+  ); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../styles/images/pizza_produtos.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -760,7 +762,7 @@ input {
     rgba(230, 50, 0, 0.85)
   ); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../styles/images/pizzaria_2.jpg');
+    url('../styles/images/pizza_login.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1169,7 +1171,7 @@ body {
     rgba(230, 50, 0, 0.85)
   ); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../styles/images/pizzaria_2.jpg');
+    url('../styles/images/pizza_especiais.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1225,7 +1227,9 @@ body {
     font-size: 0.8rem;
     margin: 0.25rem 1rem;
   }
-  
+  .slider {
+    width: 30rem;
+  }
 }
 
 
